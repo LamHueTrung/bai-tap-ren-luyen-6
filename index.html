@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Tự học Lập Trình Cùng LHT</title>
+    <link rel="icon" href="http://abctech.vn/wp-content/uploads/2017/06/logo-nen-xanh.jpg" type="image/x-icon" />
+
+</head>
+<body>
+    <header class="header">
+        <ul class="header_list">
+            <li class="header_items header-menu">
+                    <i class="menu-mobile fas fa-bars"></i>
+            </li>
+            <ul class="header_list-mobile">
+
+                <li class="header_items">
+                    <a href="https://lamhuetrung.github.io/index.html">
+                        <i class="fas fa-home"></i>
+                        <span></span>
+                    </a>
+                </li>
+               
+                <li class="header_items">
+                    <a href="#bai-tap">
+                        <i class="fas fa-book"></i>
+                        <span></span>
+                    </a>
+                </li>
+                <li class="header_items">
+                    <a href="https://www.facebook.com/T%E1%BB%B1-h%E1%BB%8Dc-l%E1%BA%ADp-Tr%C3%ACnh-c%C3%B9ng-LHT-110968584718753">
+                        <i class="fas fa-question"></i>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="gird__column-2">
+            <div class="content_LT">
+                <div class="content__BT">
+                    <h1 class="BT__tieu-de">Problem</h1>
+                    <span class="BT__noi-dung">Find A Generic Root Of Number.</span>
+                    <span class="BT__noi-dung ">(Tiếng việt: tìm căn nguyên chung của số đã cho)</span>
+                    <span class="BT__noi-dung">=> Nguồn: <a href="https://www.programiz.com/c-programming/examples/palindrome-number"><span class="link">https://www.programiz.com</span></a>.</span>
+                </div>
+                <div class="content__BT">
+                    <h1 class="BT__tieu-de">Suggestions</h1>
+                    <span class="BT__noi-dung">+ căn nguyên chung là tổng của các chữ số tạo nên số đó, nhưng nó phải là số 1 chữ số (khi tính tổng ra là 2 con số thì làm tương tự đến khi nào chỉ còn 1 con số).</span>
+                    <span class="BT__noi-dung">+ Sử dụng vòng lặp while.</span>
+                    <h1 class="BT__noi-dung--TD">Nhắc lại kiến thức</h1>
+                    <span class="BT__noi-dung">Vòng lặp while</span>
+                    <pre class="BT__output">
+                        <code class="BT__output">
+while (điều kiện lặp) {
+    khối lệnh;
+}
+                        </code>
+                    </pre>
+                    <span class="BT__noi-dung">+ Sử dụng kiến thức if.</span>
+                    <pre class="BT__output">
+                        <code class="BT__output">
+if (điều kiện) {
+    câu lệnh;
+}
+                        </code>
+                    </pre>
+                </div>
+                <div class="content__BT">
+                    <h1 class="BT__tieu-de">Code mẫu: </h1>
+                    <pre class="BT__output">
+                        <code class="BT__output">
+#include < stdio.h >
+int main() {
+     int n, last_n;
+     printf("nhap vao n: ");
+     scanf("%d", &n);
+     int t = 0;
+     while (n != 0) {
+        last_n = n % 10;
+        t += last_n;
+        n /= 10;
+     }
+     int t1 = 0;
+     if(t < 10) {
+     printf("căn nguyên chung %d", t);
+     } else {
+        while (t != 0) {
+            last_n = t % 10;
+            t1 += last_n;
+            t /= 10;
+        }
+        printf("căn nguyên chung %d", t1);
+     }
+    return 0;
+}
+
+                        </code>
+                    </pre>
+                    <span class="BT__noi-dung">Xem tiếp video hướng dẫn nếu bạn vẫn chưa hiểu nhé.</span>
+                </div>
+            </div>
+            <div class="content__HD">
+                <h1>Video hướng dẫn </h1>
+                <video class="video" controls>
+                    <source src="./assets/video/video.webm" type="video/mp4">
+                </video>
+                <a class="btn-next not-next">Bài tiếp theo</a>
+            </div>
+    </div>
+    
+</body>
+</html>
